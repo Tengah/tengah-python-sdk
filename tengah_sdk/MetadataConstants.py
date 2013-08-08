@@ -1,3 +1,5 @@
+
+
 INFO = {
     # Base
     'CREATED_AT' : 'created_at',
@@ -87,3 +89,48 @@ INFO = {
     'LIFETIME_STEPS' : 'lifetime_steps',
     
 }
+
+
+TYPES = {
+    'CONTACT'  : 'contact',
+    'EVENT'    : 'event',
+    'FILE'     : 'file',
+    'MESSAGE'  : 'message',
+    'PERSONAL' : 'personal',
+    'PURCHASE' : 'purchase',
+    'PERSON'   : 'person',
+}
+
+FILES = {
+    'ARCHIVE' : 'archive',
+    'AUDIO' : 'audio',
+    'BINARY' : 'binary',
+    'CALENDAR' : 'calendar',
+    'IMAGE' : 'image',
+    'MESSAGE'   : 'message',
+    'PDF'   : 'pdf',
+    'PRESENTATION' : 'presentation',
+    'SPREADSHEET' : 'spreadsheet',
+    'TEXT'  : 'text',
+    'UNKNOWN' : 'unknown',
+    'VIDEO' : 'video',
+}
+
+SERVICES = {
+    'CONTEXTIO' : 'contextio',
+    'DROPBOX' : 'dropbox',
+    'FACEBOOK' : 'facebook',
+    'FITBIT' : 'fitbit',
+    'GOOGLEDRIVE' : 'googledrive',
+    'ICAL' : 'ical',
+    'IMAGES' : 'images',
+    'LINKEDIN' : 'linkedin',
+    'TWITTER' : 'twitter'
+}
+
+DOCUMENT_FILES = (
+    FILES['PRESENTATION'],
+    FILES['SPREADSHEET'],
+    FILES['TEXT'],
+    FILES['PDF'],
+)
