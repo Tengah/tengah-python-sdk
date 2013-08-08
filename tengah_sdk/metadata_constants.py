@@ -1,5 +1,4 @@
 
-
 INFO = {
     # Base
     'CREATED_AT' : 'created_at',
@@ -90,7 +89,6 @@ INFO = {
     
 }
 
-
 TYPES = {
     'CONTACT'  : 'contact',
     'EVENT'    : 'event',
@@ -134,3 +132,4 @@ DOCUMENT_FILES = (
     FILES['TEXT'],
     FILES['PDF'],
 )
+
