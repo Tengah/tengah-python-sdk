@@ -2,7 +2,8 @@ FIELDS = {
     'TYPE' : 'attribute_type',
     'INFO' : 'info',
     'DATA' : 'data',
-    'CID'  : 'cid'
+    'CID'  : 'cid',
+    'PRIMARY' : 'primary',
 }
 
 TYPES = {
