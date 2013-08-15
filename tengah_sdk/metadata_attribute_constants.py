@@ -3,7 +3,7 @@ FIELDS = {
     'INFO' : 'info',
     'DATA' : 'data',
     'CID'  : 'cid',
-    'PRIMARY' : 'primary',
+    'PRIMARY' : 'primary',
 }
 
 TYPES = {
