@@ -1,7 +1,7 @@
 {% extends "tengah_base.template" %}
 
 {% block contents %}
-#import "TESearchOptions.h"
+#import "TEMetadata.h"
 
 {% for key,val in consts|dictsort -%}
 NSString *const {{key}} = @"{{val}}";

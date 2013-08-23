@@ -1,3 +1,11 @@
+FIELDS = {
+    "OWNER"      : 'owner',
+    "SERVICE"    : 'service',
+    'ORIGINAL_DOC_ID' : 'original_doc_id',
+    'METADATA_TYPE' : 'metadata_type',
+    "ATTRIBUTES" : 'attributes',
+}
+
 INFO = {
     # Base
     'CREATED_AT' : 'created_at',

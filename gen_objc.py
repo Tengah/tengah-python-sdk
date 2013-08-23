@@ -14,6 +14,7 @@ consts = {}
 def add_const(prefix, d):
     return {prefix+k:v for k,v in d.items()}
 
+consts.update(add_const("TE_METADATA_FIELDS_", Metadata.FIELDS))
 consts.update(add_const("TE_METADATA_INFO_", Metadata.INFO))
 consts.update(add_const("TE_METADATA_SERVICES_", Metadata.SERVICES))
 consts.update(add_const("TE_METADATA_FILES_", Metadata.FILES))
@@ -27,6 +28,7 @@ subs = {
     'date': datetime.datetime.utcnow(),
     'version' : VERSION,
     'consts' : consts,
+    'year': '2013',
 }
 
 
