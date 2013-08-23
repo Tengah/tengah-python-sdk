@@ -1,0 +1,9 @@
+//
+//  {{filename}}
+//
+//  Created by {{program}} version {{version}} on {{date}}
+//  Copyright (c) {{year}} Tengah. All rights reserved.
+//
+
+{% block contents %}
+{% endblock %}
