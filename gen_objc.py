@@ -1,4 +1,4 @@
-VERSION=1
+VERSION=2
 
 import datetime, inspect
 
@@ -32,14 +32,14 @@ subs = {
 }
 
 
-h_template = env.get_template('TEMetadata.h.template')
-m_template = env.get_template('TEMetadata.m.template')
+h_template = env.get_template('TEMetadataConstants.h.template')
+m_template = env.get_template('TEMetadataConstants.m.template')
 
-subs['filename'] = 'TEMetadata.h'
-print >>open('TEMetadata.h','w'), h_template.render(subs)
+subs['filename'] = 'TEMetadataConstants.h'
+print >>open('TEMetadataConstants.h','w'), h_template.render(subs)
 
 
-subs['filename'] = 'TEMetadata.m'
-print >>open('TEMetadata.m','w'), m_template.render(subs)
+subs['filename'] = 'TEMetadataConstants.m'
+print >>open('TEMetadataConstants.m','w'), m_template.render(subs)
 
 

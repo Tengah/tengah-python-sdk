@@ -1,4 +1,5 @@
 FIELDS = {
+    "ID"         : 'id',
     "OWNER"      : 'owner',
     "SERVICE"    : 'service',
     'ORIGINAL_DOC_ID' : 'original_doc_id',

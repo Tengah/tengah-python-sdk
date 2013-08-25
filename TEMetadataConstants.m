@@ -1,7 +1,7 @@
 //
-//  TEMetadata.m
+//  TEMetadataConstants.m
 //
-//  Created by gen_objc.py version 1 on 2013-08-23 16:28:59.343491 UTC
+//  Created by gen_objc.py version 2 on 2013-08-25 21:59:21.653724 UTC
 //  Copyright (c) 2013 Tengah. All rights reserved.
 //
 
@@ -25,6 +25,7 @@ NSString *const TE_METADATA_ATTRIBUTE_TYPES_TEXT = @"text";
 NSString *const TE_METADATA_ATTRIBUTE_TYPES_URL = @"url";
 NSString *const TE_METADATA_ATTRIBUTE_TYPES_USERID = @"userid";
 NSString *const TE_METADATA_FIELDS_ATTRIBUTES = @"attributes";
+NSString *const TE_METADATA_FIELDS_ID = @"id";
 NSString *const TE_METADATA_FIELDS_METADATA_TYPE = @"metadata_type";
 NSString *const TE_METADATA_FIELDS_ORIGINAL_DOC_ID = @"original_doc_id";
 NSString *const TE_METADATA_FIELDS_OWNER = @"owner";
