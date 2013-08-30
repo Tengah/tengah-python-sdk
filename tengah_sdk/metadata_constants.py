@@ -5,6 +5,7 @@ FIELDS = {
     'ORIGINAL_DOC_ID' : 'original_doc_id',
     'METADATA_TYPE' : 'metadata_type',
     "ATTRIBUTES" : 'attributes',
+    "IS_DOWNLOADABLE" : 'is_downloadable',
 }
 
 INFO = {
