@@ -1,0 +1,10 @@
+{% extends "tengah_base.template" %}
+
+{% block contents %}
+#import "TEEventConstants.h"
+
+{% for key,val in consts|dictsort -%}
+NSString *const {{key}} = @"{{val}}";
+{% endfor %}
+
+{% endblock %}

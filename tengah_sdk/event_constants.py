@@ -1,9 +1,9 @@
 SYSTEM = {
-    'broadcast':'broadcast'
+    'BROADCAST':'broadcast'
 }
 
 USER = {
-    'workerstatus' : 'workerstatus',
-    'flash' : 'flash'
+    'WORKERSTATUS' : 'workerstatus',
+    'FLASH' : 'flash'
 }
 
