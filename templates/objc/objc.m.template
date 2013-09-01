@@ -1,7 +1,7 @@
-{% extends "tengah_base.template" %}
+{% extends "objc.base" %}
 
 {% block contents %}
-#import "TEEventConstants.h"
+#import "{{modulename}}.h"
 
 {% for key,val in consts|dictsort -%}
 NSString *const {{key}} = @"{{val}}";

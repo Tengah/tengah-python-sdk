@@ -1,4 +1,4 @@
-{% extends "tengah_base.template" %}
+{% extends "objc.base" %}
 
 {% block contents %}
 #import <Foundation/Foundation.h>

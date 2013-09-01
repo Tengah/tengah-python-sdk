@@ -141,3 +141,10 @@ DOCUMENT_FILES = (
     FILES['PDF'],
 )
     
+_ALL_ = {
+    'FIELDS' : FIELDS,
+    'FILES' : FILES,
+    'INFO' : INFO,
+    'SERVICES' : SERVICES,
+    'TYPES' : TYPES,
+}

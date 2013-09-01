@@ -1,29 +1,13 @@
 //
 //  TEMetadataConstants.h
 //
-//  Created by gen_objc.py version 2 on 2013-08-31 00:20:02.638113 UTC
+//  Created by gen_objc.py version 3 on 2013-09-01 21:08:06.778014 UTC
 //  Copyright (c) 2013 Tengah. All rights reserved.
 //
 
 
 #import <Foundation/Foundation.h>
 
-extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_CID;
-extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_DATA;
-extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_INFO;
-extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_PRIMARY;
-extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_TYPE;
-extern NSString *const TE_METADATA_ATTRIBUTE_TYPES_AMOUNT;
-extern NSString *const TE_METADATA_ATTRIBUTE_TYPES_DATE;
-extern NSString *const TE_METADATA_ATTRIBUTE_TYPES_EMAIL;
-extern NSString *const TE_METADATA_ATTRIBUTE_TYPES_LOCCOORD;
-extern NSString *const TE_METADATA_ATTRIBUTE_TYPES_LOCNAME;
-extern NSString *const TE_METADATA_ATTRIBUTE_TYPES_NAME;
-extern NSString *const TE_METADATA_ATTRIBUTE_TYPES_PHONE;
-extern NSString *const TE_METADATA_ATTRIBUTE_TYPES_TAG;
-extern NSString *const TE_METADATA_ATTRIBUTE_TYPES_TEXT;
-extern NSString *const TE_METADATA_ATTRIBUTE_TYPES_URL;
-extern NSString *const TE_METADATA_ATTRIBUTE_TYPES_USERID;
 extern NSString *const TE_METADATA_FIELDS_ATTRIBUTES;
 extern NSString *const TE_METADATA_FIELDS_ID;
 extern NSString *const TE_METADATA_FIELDS_IS_DOWNLOADABLE;

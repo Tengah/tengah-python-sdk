@@ -1,52 +1,83 @@
-VERSION=2
+VERSION=3
 
-import datetime, inspect, os
+import datetime, inspect, os, importlib, string
 
 from tengah_sdk import metadata_constants as Metadata
 from tengah_sdk import metadata_attribute_constants as MetadataAttribute
 from tengah_sdk import event_constants as Event
 
+# init templating
 from jinja2 import Template, Environment, FileSystemLoader
 
-env = Environment(loader=FileSystemLoader('templates'))
-
-mdconsts = {}
-evconsts = {}
-
-def add_const(prefix, d):
+# build contants
+def make_const(prefix, d):
+    #print prefix
+    #print d
     return {prefix+k:v for k,v in d.items()}
 
-mdconsts.update(add_const("TE_METADATA_FIELDS_", Metadata.FIELDS))
-mdconsts.update(add_const("TE_METADATA_INFO_", Metadata.INFO))
-mdconsts.update(add_const("TE_METADATA_SERVICES_", Metadata.SERVICES))
-mdconsts.update(add_const("TE_METADATA_FILES_", Metadata.FILES))
-mdconsts.update(add_const("TE_METADATA_TYPES_", Metadata.TYPES))
-mdconsts.update(add_const("TE_METADATA_ATTRIBUTE_TYPES_", MetadataAttribute.TYPES))
-mdconsts.update(add_const("TE_METADATA_ATTRIBUTE_FIELDS_", MetadataAttribute.FIELDS))
+# generate constants for some item in a file
+def generate_constants(outputname, items):
+    if outputname.lower().endswith('constants'):
+        outputname = outputname[:-9]
+    consts = {}
+    # print items
+    for key,vals in items.items():
+        # print "name,key,vals = ", outputname, key, vals
+        consts.update(make_const("TE_%s_%s_" % (outputname.upper(),key), vals))
 
-evconsts.update(add_const('TE_EVENT_SYSTEM_', Event.SYSTEM))
-evconsts.update(add_const('TE_EVENT_USER_',   Event.USER))
+    return consts
 
-consts = {'TEMetadataConstants' : mdconsts,
-          'TEEventConstants'    : evconsts,
-}
+# make a list of all the .py files in tengah_sdk
 
-subs = {
-    'program': inspect.getfile(inspect.currentframe()),
-    'date': datetime.datetime.utcnow(),
-    'version' : VERSION,
-    'consts' : mdconsts,
-    'year': '2013',
-}
+modules = {}
+for pyfile in os.listdir('tengah_sdk'):
+    pyparts = pyfile.split('.')
+    if pyparts[1] == 'py' and pyparts[0] != '__init__':
+        print "importing : " + 'tengah_sdk.' + pyparts[0]
+        modules[pyparts[0]] = importlib.import_module('tengah_sdk.' + pyparts[0])
 
-for tfile in os.listdir('templates'):
-    tparts = tfile.split('.')
-    if tparts[1] in ('m', 'h') and tparts[2] == 'template':
-        print tparts
-        template = env.get_template(tfile);
-        gfilename = tparts[0] + '.' + tparts[1]
-        subs['filename'] = gfilename
-        subs['consts']   = consts[tparts[0]]
-        print >>open(gfilename, 'w'), template.render(subs)
+for modname,mod in modules.items():
+    # for k in mod: # .__dict__.keys():
+    # print map(str.capitalize, mod.__name__.split('.')[1].split('_')[:-1]).join('')
+    outputname = string.capwords(mod.__name__.split('.')[1], '_').replace('_','')
+
+    items = mod.__dict__.get('_ALL_')
+    if items == None:
+        print mod, " doesn't contain _ALL_"
+        continue
+    
+    consts =  generate_constants(outputname, items)
+
+    subs = {
+        'name' : modname,
+        'program': inspect.getfile(inspect.currentframe()),
+        'date': datetime.datetime.utcnow(),
+        'version' : VERSION,
+        'consts' : consts,
+        'year': '2013',
         
+    }
+
+    # now look for subdirectories for different languages
+    # and generate libraries for them
+
+    for languagedir in os.listdir('templates'):
+        languagedirparts = languagedir.split('.')
+        if languagedirparts[0] == '__init__':
+            continue
+
+        genmodname = 'templates.' + languagedir + '.generator'
+        print genmodname
+        genmod = importlib.import_module(genmodname)
+
+        directory = 'templates/' + languagedir
+        for tfile in os.listdir(directory):
+            tparts = tfile.split('.')
+            if tparts[1] in ('m', 'h') and tparts[2] == 'template':
+                print tparts
+                env = Environment(loader=FileSystemLoader('templates/' + languagedir))
+                template = env.get_template(tfile);
+                genmod.generate(template, tfile, subs)
+        
+
 

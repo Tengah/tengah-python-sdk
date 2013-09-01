@@ -1,29 +1,13 @@
 //
 //  TEMetadataConstants.m
 //
-//  Created by gen_objc.py version 2 on 2013-08-31 00:20:02.638113 UTC
+//  Created by gen_objc.py version 3 on 2013-09-01 21:08:06.778014 UTC
 //  Copyright (c) 2013 Tengah. All rights reserved.
 //
 
 
-#import "TEMetadata.h"
+#import "TEMetadataConstants.h"
 
-NSString *const TE_METADATA_ATTRIBUTE_FIELDS_CID = @"cid";
-NSString *const TE_METADATA_ATTRIBUTE_FIELDS_DATA = @"data";
-NSString *const TE_METADATA_ATTRIBUTE_FIELDS_INFO = @"info";
-NSString *const TE_METADATA_ATTRIBUTE_FIELDS_PRIMARY = @"primary";
-NSString *const TE_METADATA_ATTRIBUTE_FIELDS_TYPE = @"attribute_type";
-NSString *const TE_METADATA_ATTRIBUTE_TYPES_AMOUNT = @"amount";
-NSString *const TE_METADATA_ATTRIBUTE_TYPES_DATE = @"date";
-NSString *const TE_METADATA_ATTRIBUTE_TYPES_EMAIL = @"email";
-NSString *const TE_METADATA_ATTRIBUTE_TYPES_LOCCOORD = @"location_coordinate";
-NSString *const TE_METADATA_ATTRIBUTE_TYPES_LOCNAME = @"location_name";
-NSString *const TE_METADATA_ATTRIBUTE_TYPES_NAME = @"name";
-NSString *const TE_METADATA_ATTRIBUTE_TYPES_PHONE = @"phone";
-NSString *const TE_METADATA_ATTRIBUTE_TYPES_TAG = @"tag";
-NSString *const TE_METADATA_ATTRIBUTE_TYPES_TEXT = @"text";
-NSString *const TE_METADATA_ATTRIBUTE_TYPES_URL = @"url";
-NSString *const TE_METADATA_ATTRIBUTE_TYPES_USERID = @"userid";
 NSString *const TE_METADATA_FIELDS_ATTRIBUTES = @"attributes";
 NSString *const TE_METADATA_FIELDS_ID = @"id";
 NSString *const TE_METADATA_FIELDS_IS_DOWNLOADABLE = @"is_downloadable";

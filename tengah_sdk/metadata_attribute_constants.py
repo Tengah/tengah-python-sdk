@@ -19,3 +19,8 @@ TYPES = {
     'URL': 'url',
     'USERID' : 'userid',
 }
+
+_ALL_ = {
+    'FIELDS' : FIELDS,
+    'TYPES' : TYPES,
+}
