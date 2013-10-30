@@ -89,6 +89,18 @@ INFO = {
     'USERID' : 'userid',
     'WEBSITE' : 'website',
     'AVATAR' : 'avatar',
+    'HOME' : 'home',
+    'FAX' : 'fax',
+    'COMPANY_MAIN' : 'company_main',
+    'HOME_FAX' : 'home_fax',
+    'CAR' : 'car',
+    'MAIN' : 'main',
+    'MOBILE' : 'mobile',
+    'OTHER' : 'other',
+    'OTHER_FAX' : 'other_fax',
+    'PAGER' : 'pager',
+    'WORK' : 'work',
+    'ORG_NAME' : 'organization',
     
     # Personal
     'CALORIES' : 'calories',
