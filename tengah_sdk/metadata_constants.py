@@ -44,6 +44,10 @@ INFO = {
     'TITLE' : 'title',
     'VIEWED_AT' : 'viewed_at',
     'THUMBNAIL' : 'thumbnail',
+    'CREATED_BY'  :'created_by',
+    'MODIFIED_BY'  :'modified_by',
+    'PURGED_AT' : 'purged_at',
+    'DELETED_AT' : 'deleted_at',
     
     # Image
     'DEPTH' : 'image_depth',
