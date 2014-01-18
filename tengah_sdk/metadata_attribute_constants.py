@@ -6,7 +6,7 @@ FIELDS = {
     'PRIMARY' : 'primary',
 }
 
-TYPES = {
+KINDS = {
     'AMOUNT' : 'amount',
     'DATE': 'date',
     'EMAIL': 'email',
@@ -22,5 +22,5 @@ TYPES = {
 
 _ALL_ = {
     'FIELDS' : FIELDS,
-    'TYPES' : TYPES,
+    'KINDS' : KINDS,
 }

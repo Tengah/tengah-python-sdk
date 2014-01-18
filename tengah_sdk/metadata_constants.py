@@ -113,7 +113,7 @@ INFO = {
     'LIFETIME_STEPS' : 'lifetime_steps',
 }
 
-TYPES = {
+KINDS = {
     'CONTACT'  : 'contact',
     'EVENT'    : 'event',
     'FILE'     : 'file',
@@ -162,5 +162,5 @@ _ALL_ = {
     'FILES' : FILES,
     'INFO' : INFO,
     'SERVICES' : SERVICES,
-    'TYPES' : TYPES,
+    'KINDS' : KINDS,
 }
