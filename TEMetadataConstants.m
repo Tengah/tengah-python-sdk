@@ -1,7 +1,7 @@
 //
 //  TEMetadataConstants.m
 //
-//  Created by gen_objc.py version 3 on 2013-09-01 21:08:06.778014 UTC
+//  Created by gen_objc.py version 3 on 2014-01-20 21:10:00.152613 UTC
 //  Copyright (c) 2013 Tengah. All rights reserved.
 //
 
@@ -33,9 +33,13 @@ NSString *const TE_METADATA_INFO_AVATAR = @"avatar";
 NSString *const TE_METADATA_INFO_BIRTHDAY = @"birthday";
 NSString *const TE_METADATA_INFO_CALORIES = @"calories";
 NSString *const TE_METADATA_INFO_CAPTION = @"caption";
+NSString *const TE_METADATA_INFO_CAR = @"car";
 NSString *const TE_METADATA_INFO_CC = @"cc";
+NSString *const TE_METADATA_INFO_COMPANY_MAIN = @"company_main";
 NSString *const TE_METADATA_INFO_CONTENTS = @"contents";
 NSString *const TE_METADATA_INFO_CREATED_AT = @"created_at";
+NSString *const TE_METADATA_INFO_CREATED_BY = @"created_by";
+NSString *const TE_METADATA_INFO_DELETED_AT = @"deleted_at";
 NSString *const TE_METADATA_INFO_DEPTH = @"image_depth";
 NSString *const TE_METADATA_INFO_DESCRIPTION = @"description";
 NSString *const TE_METADATA_INFO_DISPLAY_NAME = @"display_name";
@@ -45,6 +49,7 @@ NSString *const TE_METADATA_INFO_ENTITY = @"entity";
 NSString *const TE_METADATA_INFO_EXIF = @"exif";
 NSString *const TE_METADATA_INFO_EXIF_CAPTURED = @"exif_captured";
 NSString *const TE_METADATA_INFO_EXIF_ORIENTATION = @"exif_orientation";
+NSString *const TE_METADATA_INFO_FAX = @"fax";
 NSString *const TE_METADATA_INFO_FILE_PATH = @"file_path";
 NSString *const TE_METADATA_INFO_FILE_TYPE = @"file_type";
 NSString *const TE_METADATA_INFO_FILENAME = @"filename";
@@ -54,6 +59,8 @@ NSString *const TE_METADATA_INFO_FRIEND = @"friend";
 NSString *const TE_METADATA_INFO_FROM = @"from";
 NSString *const TE_METADATA_INFO_HASH = @"hash";
 NSString *const TE_METADATA_INFO_HEIGHT = @"image_height";
+NSString *const TE_METADATA_INFO_HOME = @"home";
+NSString *const TE_METADATA_INFO_HOME_FAX = @"home_fax";
 NSString *const TE_METADATA_INFO_HOMETOWN = @"hometown";
 NSString *const TE_METADATA_INFO_IMAGE_LENGTH = @"exif_image_length";
 NSString *const TE_METADATA_INFO_IMAGE_RESOLUTION_UNIT = @"exif_image_resolution_unit";
@@ -64,13 +71,21 @@ NSString *const TE_METADATA_INFO_LIFETIME_CALORIES = @"lifetime_calories";
 NSString *const TE_METADATA_INFO_LIFETIME_STEPS = @"lifetime_steps";
 NSString *const TE_METADATA_INFO_LOCATION = @"location";
 NSString *const TE_METADATA_INFO_MAILINGLIST = @"mailinglist";
+NSString *const TE_METADATA_INFO_MAIN = @"main";
 NSString *const TE_METADATA_INFO_MENTION = @"mention";
 NSString *const TE_METADATA_INFO_MESSAGE = @"message";
 NSString *const TE_METADATA_INFO_MIME_TYPE = @"mime_type";
+NSString *const TE_METADATA_INFO_MOBILE = @"mobile";
 NSString *const TE_METADATA_INFO_MODIFIED_AT = @"modified_at";
+NSString *const TE_METADATA_INFO_MODIFIED_BY = @"modified_by";
+NSString *const TE_METADATA_INFO_ORG_NAME = @"organization";
 NSString *const TE_METADATA_INFO_ORGANIZER = @"organizer";
+NSString *const TE_METADATA_INFO_OTHER = @"other";
+NSString *const TE_METADATA_INFO_OTHER_FAX = @"other_fax";
 NSString *const TE_METADATA_INFO_OWNER = @"owner";
+NSString *const TE_METADATA_INFO_PAGER = @"pager";
 NSString *const TE_METADATA_INFO_PROFILE = @"profile";
+NSString *const TE_METADATA_INFO_PURGED_AT = @"purged_at";
 NSString *const TE_METADATA_INFO_QUALITY = @"quality";
 NSString *const TE_METADATA_INFO_QUANTUM_RANGE = @"image_quantum_range";
 NSString *const TE_METADATA_INFO_REFERENCE = @"reference";
@@ -96,6 +111,14 @@ NSString *const TE_METADATA_INFO_USERID = @"userid";
 NSString *const TE_METADATA_INFO_VIEWED_AT = @"viewed_at";
 NSString *const TE_METADATA_INFO_WEBSITE = @"website";
 NSString *const TE_METADATA_INFO_WIDTH = @"image_width";
+NSString *const TE_METADATA_INFO_WORK = @"work";
+NSString *const TE_METADATA_KINDS_CONTACT = @"contact";
+NSString *const TE_METADATA_KINDS_EVENT = @"event";
+NSString *const TE_METADATA_KINDS_FILE = @"file";
+NSString *const TE_METADATA_KINDS_MESSAGE = @"message";
+NSString *const TE_METADATA_KINDS_PERSON = @"person";
+NSString *const TE_METADATA_KINDS_PERSONAL = @"personal";
+NSString *const TE_METADATA_KINDS_PURCHASE = @"purchase";
 NSString *const TE_METADATA_SERVICES_CONTEXTIO = @"contextio";
 NSString *const TE_METADATA_SERVICES_DROPBOX = @"dropbox";
 NSString *const TE_METADATA_SERVICES_FACEBOOK = @"facebook";
@@ -105,13 +128,6 @@ NSString *const TE_METADATA_SERVICES_ICAL = @"ical";
 NSString *const TE_METADATA_SERVICES_IMAGES = @"images";
 NSString *const TE_METADATA_SERVICES_LINKEDIN = @"linkedin";
 NSString *const TE_METADATA_SERVICES_TWITTER = @"twitter";
-NSString *const TE_METADATA_TYPES_CONTACT = @"contact";
-NSString *const TE_METADATA_TYPES_EVENT = @"event";
-NSString *const TE_METADATA_TYPES_FILE = @"file";
-NSString *const TE_METADATA_TYPES_MESSAGE = @"message";
-NSString *const TE_METADATA_TYPES_PERSON = @"person";
-NSString *const TE_METADATA_TYPES_PERSONAL = @"personal";
-NSString *const TE_METADATA_TYPES_PURCHASE = @"purchase";
 
 
 

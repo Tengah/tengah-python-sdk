@@ -1,7 +1,7 @@
 //
 //  TEMetadataConstants.h
 //
-//  Created by gen_objc.py version 3 on 2013-09-01 21:08:06.778014 UTC
+//  Created by gen_objc.py version 3 on 2014-01-20 21:10:00.152613 UTC
 //  Copyright (c) 2013 Tengah. All rights reserved.
 //
 
@@ -33,9 +33,13 @@ extern NSString *const TE_METADATA_INFO_AVATAR;
 extern NSString *const TE_METADATA_INFO_BIRTHDAY;
 extern NSString *const TE_METADATA_INFO_CALORIES;
 extern NSString *const TE_METADATA_INFO_CAPTION;
+extern NSString *const TE_METADATA_INFO_CAR;
 extern NSString *const TE_METADATA_INFO_CC;
+extern NSString *const TE_METADATA_INFO_COMPANY_MAIN;
 extern NSString *const TE_METADATA_INFO_CONTENTS;
 extern NSString *const TE_METADATA_INFO_CREATED_AT;
+extern NSString *const TE_METADATA_INFO_CREATED_BY;
+extern NSString *const TE_METADATA_INFO_DELETED_AT;
 extern NSString *const TE_METADATA_INFO_DEPTH;
 extern NSString *const TE_METADATA_INFO_DESCRIPTION;
 extern NSString *const TE_METADATA_INFO_DISPLAY_NAME;
@@ -45,6 +49,7 @@ extern NSString *const TE_METADATA_INFO_ENTITY;
 extern NSString *const TE_METADATA_INFO_EXIF;
 extern NSString *const TE_METADATA_INFO_EXIF_CAPTURED;
 extern NSString *const TE_METADATA_INFO_EXIF_ORIENTATION;
+extern NSString *const TE_METADATA_INFO_FAX;
 extern NSString *const TE_METADATA_INFO_FILE_PATH;
 extern NSString *const TE_METADATA_INFO_FILE_TYPE;
 extern NSString *const TE_METADATA_INFO_FILENAME;
@@ -54,6 +59,8 @@ extern NSString *const TE_METADATA_INFO_FRIEND;
 extern NSString *const TE_METADATA_INFO_FROM;
 extern NSString *const TE_METADATA_INFO_HASH;
 extern NSString *const TE_METADATA_INFO_HEIGHT;
+extern NSString *const TE_METADATA_INFO_HOME;
+extern NSString *const TE_METADATA_INFO_HOME_FAX;
 extern NSString *const TE_METADATA_INFO_HOMETOWN;
 extern NSString *const TE_METADATA_INFO_IMAGE_LENGTH;
 extern NSString *const TE_METADATA_INFO_IMAGE_RESOLUTION_UNIT;
@@ -64,13 +71,21 @@ extern NSString *const TE_METADATA_INFO_LIFETIME_CALORIES;
 extern NSString *const TE_METADATA_INFO_LIFETIME_STEPS;
 extern NSString *const TE_METADATA_INFO_LOCATION;
 extern NSString *const TE_METADATA_INFO_MAILINGLIST;
+extern NSString *const TE_METADATA_INFO_MAIN;
 extern NSString *const TE_METADATA_INFO_MENTION;
 extern NSString *const TE_METADATA_INFO_MESSAGE;
 extern NSString *const TE_METADATA_INFO_MIME_TYPE;
+extern NSString *const TE_METADATA_INFO_MOBILE;
 extern NSString *const TE_METADATA_INFO_MODIFIED_AT;
+extern NSString *const TE_METADATA_INFO_MODIFIED_BY;
+extern NSString *const TE_METADATA_INFO_ORG_NAME;
 extern NSString *const TE_METADATA_INFO_ORGANIZER;
+extern NSString *const TE_METADATA_INFO_OTHER;
+extern NSString *const TE_METADATA_INFO_OTHER_FAX;
 extern NSString *const TE_METADATA_INFO_OWNER;
+extern NSString *const TE_METADATA_INFO_PAGER;
 extern NSString *const TE_METADATA_INFO_PROFILE;
+extern NSString *const TE_METADATA_INFO_PURGED_AT;
 extern NSString *const TE_METADATA_INFO_QUALITY;
 extern NSString *const TE_METADATA_INFO_QUANTUM_RANGE;
 extern NSString *const TE_METADATA_INFO_REFERENCE;
@@ -96,6 +111,14 @@ extern NSString *const TE_METADATA_INFO_USERID;
 extern NSString *const TE_METADATA_INFO_VIEWED_AT;
 extern NSString *const TE_METADATA_INFO_WEBSITE;
 extern NSString *const TE_METADATA_INFO_WIDTH;
+extern NSString *const TE_METADATA_INFO_WORK;
+extern NSString *const TE_METADATA_KINDS_CONTACT;
+extern NSString *const TE_METADATA_KINDS_EVENT;
+extern NSString *const TE_METADATA_KINDS_FILE;
+extern NSString *const TE_METADATA_KINDS_MESSAGE;
+extern NSString *const TE_METADATA_KINDS_PERSON;
+extern NSString *const TE_METADATA_KINDS_PERSONAL;
+extern NSString *const TE_METADATA_KINDS_PURCHASE;
 extern NSString *const TE_METADATA_SERVICES_CONTEXTIO;
 extern NSString *const TE_METADATA_SERVICES_DROPBOX;
 extern NSString *const TE_METADATA_SERVICES_FACEBOOK;
@@ -105,13 +128,6 @@ extern NSString *const TE_METADATA_SERVICES_ICAL;
 extern NSString *const TE_METADATA_SERVICES_IMAGES;
 extern NSString *const TE_METADATA_SERVICES_LINKEDIN;
 extern NSString *const TE_METADATA_SERVICES_TWITTER;
-extern NSString *const TE_METADATA_TYPES_CONTACT;
-extern NSString *const TE_METADATA_TYPES_EVENT;
-extern NSString *const TE_METADATA_TYPES_FILE;
-extern NSString *const TE_METADATA_TYPES_MESSAGE;
-extern NSString *const TE_METADATA_TYPES_PERSON;
-extern NSString *const TE_METADATA_TYPES_PERSONAL;
-extern NSString *const TE_METADATA_TYPES_PURCHASE;
 
 
 
