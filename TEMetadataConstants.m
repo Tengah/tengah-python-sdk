@@ -1,10 +1,9 @@
 //
 //  TEMetadataConstants.m
 //
-//  Created by gen_objc.py version 3 on 2014-01-21 16:05:26.705407 UTC
+//  Created by gen_objc.py version 3 on 2014-01-21 17:50:25.452112 UTC
 //  Copyright (c) 2013 Tengah. All rights reserved.
 //
-
 
 #import "TEMetadataConstants.h"
 
@@ -128,6 +127,3 @@ NSString *const TE_METADATA_SERVICES_ICAL = @"ical";
 NSString *const TE_METADATA_SERVICES_IMAGES = @"images";
 NSString *const TE_METADATA_SERVICES_LINKEDIN = @"linkedin";
 NSString *const TE_METADATA_SERVICES_TWITTER = @"twitter";
-
-
-

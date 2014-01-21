@@ -1,10 +1,9 @@
 //
 //  TEMetadataAttributeConstants.m
 //
-//  Created by gen_objc.py version 3 on 2014-01-21 16:05:26.699084 UTC
+//  Created by gen_objc.py version 3 on 2014-01-21 17:50:25.445338 UTC
 //  Copyright (c) 2013 Tengah. All rights reserved.
 //
-
 
 #import "TEMetadataAttributeConstants.h"
 
@@ -24,6 +23,3 @@ NSString *const TE_METADATA_ATTRIBUTE_KINDS_TAG = @"tag";
 NSString *const TE_METADATA_ATTRIBUTE_KINDS_TEXT = @"text";
 NSString *const TE_METADATA_ATTRIBUTE_KINDS_URL = @"url";
 NSString *const TE_METADATA_ATTRIBUTE_KINDS_USERID = @"userid";
-
-
-

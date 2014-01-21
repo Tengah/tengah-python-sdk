@@ -1,10 +1,9 @@
 //
 //  TEEventConstants.m
 //
-//  Created by gen_objc.py version 3 on 2014-01-21 16:05:26.690383 UTC
+//  Created by gen_objc.py version 3 on 2014-01-21 17:50:25.436535 UTC
 //  Copyright (c) 2013 Tengah. All rights reserved.
 //
-
 
 #import "TEEventConstants.h"
 
@@ -29,6 +28,3 @@ NSString *const TE_EVENT_USER_WORKERSTATUS_PROGRESS = @"progress";
 NSString *const TE_EVENT_USER_WORKERSTATUS_RATE = @"rate";
 NSString *const TE_EVENT_USER_WORKERSTATUS_STATE = @"state";
 NSString *const TE_EVENT_USER_WORKERSTATUS_TOTAL = @"total";
-
-
-

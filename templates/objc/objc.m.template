@@ -1,10 +1,10 @@
 {% extends "objc.base" %}
 
-{% block contents %}
+{% block contents -%}
 #import "{{modulename}}.h"
 
 {% for key,val in consts|dictsort -%}
 NSString *const {{key}} = @"{{val}}";
 {% endfor %}
 
-{% endblock %}
+{%- endblock %}

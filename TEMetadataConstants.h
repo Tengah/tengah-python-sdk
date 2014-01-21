@@ -1,10 +1,9 @@
 //
 //  TEMetadataConstants.h
 //
-//  Created by gen_objc.py version 3 on 2014-01-21 16:05:26.705407 UTC
+//  Created by gen_objc.py version 3 on 2014-01-21 17:50:25.452112 UTC
 //  Copyright (c) 2013 Tengah. All rights reserved.
 //
-
 
 #import <Foundation/Foundation.h>
 
@@ -128,8 +127,3 @@ extern NSString *const TE_METADATA_SERVICES_ICAL;
 extern NSString *const TE_METADATA_SERVICES_IMAGES;
 extern NSString *const TE_METADATA_SERVICES_LINKEDIN;
 extern NSString *const TE_METADATA_SERVICES_TWITTER;
-
-
-
-
-
