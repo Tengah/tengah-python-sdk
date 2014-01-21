@@ -39,13 +39,14 @@ for pyfile in os.listdir('tengah_sdk'):
 for modname,mod in modules.items():
     # for k in mod: # .__dict__.keys():
     # print map(str.capitalize, mod.__name__.split('.')[1].split('_')[:-1]).join('')
-    outputname = string.capwords(mod.__name__.split('.')[1], '_').replace('_','')
+    words = mod.__name__.split('.')[1].split('_')
+    outputname = string.capwords("_".join(words[:-1]), '_') + string.capwords(words[-1], '_')
 
     items = mod.__dict__.get('_ALL_')
     if items == None:
         print mod, " doesn't contain _ALL_"
         continue
-    
+
     consts =  generate_constants(outputname, items)
 
     subs = {
@@ -55,7 +56,7 @@ for modname,mod in modules.items():
         'version' : VERSION,
         'consts' : consts,
         'year': '2013',
-        
+
     }
 
     # now look for subdirectories for different languages
@@ -78,6 +79,6 @@ for modname,mod in modules.items():
                 env = Environment(loader=FileSystemLoader('templates/' + languagedir))
                 template = env.get_template(tfile);
                 genmod.generate(template, tfile, subs)
-        
+
 
 

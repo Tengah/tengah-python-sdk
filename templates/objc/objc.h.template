@@ -1,12 +1,10 @@
 {% extends "objc.base" %}
 
-{% block contents %}
+{% block contents -%}
 #import <Foundation/Foundation.h>
 
 {% for key,val in consts|dictsort -%}
 extern NSString *const {{key}};
 {% endfor %}
 
-
-
-{% endblock %}
+{%- endblock %}

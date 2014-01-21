@@ -12,5 +12,4 @@ def generate(template, tfile, subs):
     subs['filename'] = outfilename
     subs['modulename'] = modulename
 
-    print >>open(outfilename, 'w'), template.render(subs)
-
+    print >>open(outfilename, 'w'), template.render(subs)[:-1]

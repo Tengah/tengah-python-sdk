@@ -1,7 +1,7 @@
 FIELDS = {
-    'TYPE' : 'attribute_type',
-    'INFO' : 'info',
-    'DATA' : 'data',
+    'KIND' : 'kind',
+    'NAME' : 'name',
+    'VALUE' : 'value',
     'CID'  : 'cid',
     'PRIMARY' : 'primary',
 }
