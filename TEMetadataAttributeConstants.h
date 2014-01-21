@@ -1,17 +1,17 @@
 //
 //  TEMetadataAttributeConstants.h
 //
-//  Created by gen_objc.py version 3 on 2014-01-21 17:50:25.445338 UTC
+//  Created by gen_objc.py version 3 on 2014-01-21 19:59:19.418880 UTC
 //  Copyright (c) 2013 Tengah. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_CID;
-extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_DATA;
-extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_INFO;
+extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_KIND;
+extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_NAME;
 extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_PRIMARY;
-extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_TYPE;
+extern NSString *const TE_METADATA_ATTRIBUTE_FIELDS_VALUE;
 extern NSString *const TE_METADATA_ATTRIBUTE_KINDS_AMOUNT;
 extern NSString *const TE_METADATA_ATTRIBUTE_KINDS_DATE;
 extern NSString *const TE_METADATA_ATTRIBUTE_KINDS_EMAIL;
