@@ -4,6 +4,8 @@ FIELDS = {
     'VALUE' : 'value',
     'CID'  : 'cid',
     'PRIMARY' : 'primary',
+    'DERIVED_FROM' : 'derived_from',
+    'SCORE' : 'score',
 }
 
 KINDS = {
