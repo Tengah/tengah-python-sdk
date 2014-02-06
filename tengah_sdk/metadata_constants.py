@@ -111,16 +111,20 @@ NAME = {
     'STEPS' : 'steps',
     'LIFETIME_CALORIES' : 'lifetime_calories',
     'LIFETIME_STEPS' : 'lifetime_steps',
+
+    # collection 
+    'COLLECTION' : 'collection',
 }
 
 KINDS = {
-    'CONTACT'  : 'contact',
-    'EVENT'    : 'event',
-    'FILE'     : 'file',
-    'MESSAGE'  : 'message',
-    'PERSONAL' : 'personal',
-    'PURCHASE' : 'purchase',
-    'PERSON'   : 'person',
+    'CONTACT'   : 'contact',
+    'EVENT'     : 'event',
+    'FILE'      : 'file',
+    'MESSAGE'   : 'message',
+    'PERSONAL'  : 'personal',
+    'PURCHASE'  : 'purchase',
+    'PERSON'    : 'person',
+    'COLLECTION': 'collection',
 }
 
 FILES = {
